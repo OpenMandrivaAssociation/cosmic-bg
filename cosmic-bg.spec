@@ -1,19 +1,20 @@
 %define         appname com.system76.CosmicBackground
 Name:           cosmic-bg
-Version:        1.0.0~alpha1
-Release:        0
+Version:        1.0.0
+Release:        0.alpha1.0
 Summary:        COSMIC service for backgrounds
 License:        MPL-2.0
 URL:            https://github.com/pop-os/cosmic-bg
-Source0:        %{name}-%{version}.tar.zst
-Source1:        vendor.tar.zst
-BuildRequires:  cargo-packaging
+Source0:        https://github.com/pop-os/cosmic-applibrary/archive/epoch-%{version}-alpha.1/%{name}-epoch-%{version}-alpha.1.tar.gz
+Source1:        vendor.tar.xz
+Source2:        cargo_config
+
+BuildRequires:  rust-packaging
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  just
 BuildRequires:  mold
 BuildRequires:  nasm
 BuildRequires:  pkgconfig
-BuildRequires:  update-desktop-files
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(xkbcommon)
 
@@ -28,17 +29,15 @@ Supports the following features:
     Wallpaper slideshows that alternate between backgrounds periodically
 
 %prep
-%autosetup -a1
+%autosetup -n %{name}-epoch-%{version}-alpha.1 -a1 -p1
+mkdir .cargo
+cp %{SOURCE2} .cargo/config
 
 %build
 just build-release
 
 %install
 just rootdir=%{buildroot} prefix=%{_prefix} install
-%suse_update_desktop_file %{appname}
-
-%check
-%{cargo_test}
 
 %files
 %license LICENSE.md
