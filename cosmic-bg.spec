@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 %define         appname com.system76.CosmicBackground
 Name:           cosmic-bg
 Version:        1.0.0
