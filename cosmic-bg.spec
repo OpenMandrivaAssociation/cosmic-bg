@@ -3,6 +3,7 @@ Name:           cosmic-bg
 Version:        1.0.0
 Release:        0.alpha1.0
 Summary:        COSMIC service for backgrounds
+Group:          Desktop/COSMIC
 License:        MPL-2.0
 URL:            https://github.com/pop-os/cosmic-bg
 Source0:        https://github.com/pop-os/cosmic-applibrary/archive/epoch-%{version}-alpha.1/%{name}-epoch-%{version}-alpha.1.tar.gz
