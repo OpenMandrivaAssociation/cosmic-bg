@@ -1,0 +1,18 @@
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/jackpot51/rust-atomicwrites"]
+git = "https://github.com/jackpot51/rust-atomicwrites"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/pop-os/libcosmic"]
+git = "https://github.com/pop-os/libcosmic"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/smithay/client-toolkit?rev=2e9bf9f"]
+git = "https://github.com/smithay/client-toolkit"
+rev = "2e9bf9f"
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
