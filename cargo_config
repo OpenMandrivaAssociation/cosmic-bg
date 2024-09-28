@@ -5,13 +5,19 @@ replace-with = "vendored-sources"
 git = "https://github.com/jackpot51/rust-atomicwrites"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os/libcosmic"]
-git = "https://github.com/pop-os/libcosmic"
+[source."git+https://github.com/pop-os//libcosmic?rev=8c6f2c9ebc5c2c04fe168c2d941f8c5a416b33bb"]
+git = "https://github.com/pop-os//libcosmic"
+rev = "8c6f2c9ebc5c2c04fe168c2d941f8c5a416b33bb"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/smithay/client-toolkit?rev=2e9bf9f"]
-git = "https://github.com/smithay/client-toolkit"
-rev = "2e9bf9f"
+[source."git+https://github.com/pop-os/smithay-clipboard?tag=pop-dnd-5"]
+git = "https://github.com/pop-os/smithay-clipboard"
+tag = "pop-dnd-5"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/pop-os/window_clipboard.git?tag=pop-dnd-8"]
+git = "https://github.com/pop-os/window_clipboard.git"
+tag = "pop-dnd-8"
 replace-with = "vendored-sources"
 
 [source.vendored-sources]
