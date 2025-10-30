@@ -2,7 +2,7 @@
 %define         appname com.system76.CosmicBackground
 Name:           cosmic-bg
 Version:        1.0.0
-%define beta beta.3
+%define beta beta.4
 Release:        %{?beta:0.%{beta}.}1
 Summary:        COSMIC service for backgrounds
 Group:          Desktop/COSMIC
