@@ -9,14 +9,14 @@ replace-with = "vendored-sources"
 git = "https://github.com/pop-os/libcosmic"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os/smithay-clipboard?tag=pop-dnd-5"]
+[source."git+https://github.com/pop-os/smithay-clipboard?tag=sctk-0.20"]
 git = "https://github.com/pop-os/smithay-clipboard"
-tag = "pop-dnd-5"
+tag = "sctk-0.20"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os/window_clipboard.git?tag=pop-0.13-2"]
+[source."git+https://github.com/pop-os/window_clipboard.git?tag=sctk-0.20"]
 git = "https://github.com/pop-os/window_clipboard.git"
-tag = "pop-0.13-2"
+tag = "sctk-0.20"
 replace-with = "vendored-sources"
 
 [source.vendored-sources]
