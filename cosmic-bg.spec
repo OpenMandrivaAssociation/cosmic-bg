@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 %define         appname com.system76.CosmicBackground
 Name:           cosmic-bg
-Version:        1.0.2
+Version:        1.2.0
 #define beta beta.7
 Release:        %{?beta:0.%{beta}.}1
 Summary:        COSMIC service for backgrounds
@@ -47,8 +47,8 @@ just rootdir=%{buildroot} prefix=%{_prefix} install
 %license LICENSE.md
 %doc README.md
 %{_bindir}/%{name}
-%{_datadir}/applications/%{appname}.desktop
+#{_datadir}/applications/%{appname}.desktop
 %{_datadir}/cosmic
-%{_datadir}/icons/hicolor/scalable/apps/%{appname}.svg
-%{_datadir}/icons/hicolor/symbolic/apps/%{appname}-symbolic.svg
-%{_datadir}/metainfo/%{appname}.metainfo.xml
+#{_datadir}/icons/hicolor/scalable/apps/%{appname}.svg
+#{_datadir}/icons/hicolor/symbolic/apps/%{appname}-symbolic.svg
+#{_datadir}/metainfo/%{appname}.metainfo.xml
