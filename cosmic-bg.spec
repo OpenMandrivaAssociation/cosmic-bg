@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 %define         appname com.system76.CosmicBackground
 Name:           cosmic-bg
-Version:        1.5.0
+Version:        1.7.0
 #define beta beta.7
 Release:        %{?beta:0.%{beta}.}1
 Summary:        COSMIC service for backgrounds
